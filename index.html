@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Student & Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#home" class="logo">
+                    <span class="logo-text">Portfolio</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="greeting">Hello, I'm</span>
+                    <span class="name">Dhiraj Teke</span>
+                    <span class="typing-text">Student & Developer</span>
+                </h1>
+                <p class="hero-description">
+                    I craft beautiful digital experiences with modern web technologies, 
+                    specializing in UI/UX design and full-stack development.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Dj18-26" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/dhiraj-teke?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BAcP2Ddy3TTiBYLu3cdNdwg%3D%3D" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/its_dhi_raj.26?igsh=MXMyenRiZ214eXlsNQ==" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="Dhiraj professional photo.jpeg" alt="Profile Picture">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Student & Developer | Creative Designer</h3>
+                    <p>
+                        I'm a passionate developer with over 5 years of experience in creating 
+                        stunning web applications and user interfaces. My expertise lies in 
+                        combining beautiful design with clean, efficient code.
+                    </p>
+                    <p>
+                        I specialize in modern web technologies including React, Node.js, and 
+                        advanced CSS animations. I'm also proficient in Figma for creating 
+                        pixel-perfect designs that transform into responsive web experiences.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="2">0</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="2">0</span>
+                            <span class="stat-label">Coding Langauge</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="1">0</span>
+                            <span class="stat-label">Current College Year</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="95"></div>
+                    </div>
+                    <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="50"></div>
+                    </div>
+                    <span class="skill-percentage">50%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python(core)</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3>Node.js</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="82"></div>
+                    </div>
+                    <span class="skill-percentage">82%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                    <h3>Figma</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="92"></div>
+                    </div>
+                    <span class="skill-percentage">92%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">Professional credentials and achievements</p>
+            </div>
+            <div class="certifications-grid">
+                <!-- Certification 1 -->
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Python Essential 1 Certificate</h3>
+                        <p class="cert-issuer">Cisco Network Academy</p>
+                        <p class="cert-date">Issued: 20 Sep 2025 </p>
+                        <p class="cert-description">Completed Python Essentials 1 certification from Cisco Networking Academy, demonstrating strong foundations in Python programming and problem-solving.</p>
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                            <span>Verified</span>
+                        </div>
+                    </div>
+                    <a href="PythonEssentials1.pdf" class="cert-link" aria-label="View Certificate">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <!-- Certification 2 -->
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Python Essentials 2 Certificate</h3>
+                        <p class="cert-issuer">Cisco Network Academy</p>
+                        <p class="cert-date">Issued: 15 Oct 2025</p>
+                        <p class="cert-description">Completed Python Essentials 2 certification from Cisco Networking Academy, gaining advanced skills in OOP, multi-module Python development, and real-world problem solving.</p>
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                            <span>Verified</span>
+                        </div>
+                    </div>
+                    <a href="#" class="cert-link" aria-label="View Certificate">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <!-- Certification 3 -->
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Microsoft Credentials Certificate</h3>
+                        <p class="cert-issuer">Microsoft credential 1</p>
+                        <p class="cert-date">Issued:  November 22, 2025</p>
+                        <p class="cert-description">Microsoft Applied Skills: Prepare security and compliance to support
+Microsoft 365 Copilot</p>
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                            <span>Verified</span>
+                        </div>
+                    </div>
+                    <a href="Credentials - dhirajteke-7370 _ Microsoft Learn (1).pdf" class="cert-link" aria-label="View Certificate">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <!-- Certification 4 -->
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Microsoft Credentials Certificate</h3>
+                        <p class="cert-issuer">Microsoft credential 2</p>
+                        <p class="cert-date">Issued: 22 November 2025</p>
+                        <p class="cert-description">Microsoft Applied Skills: Implement retention, eDiscovery, and
+Communication Compliance in Microsoft Purview</p>
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                            <span>Verified</span>
+                        </div>
+                    </div>
+                    <a href="Credentials - dhirajteke-7370 _ Microsoft Learn 2 (1).pdf" class="cert-link" aria-label="View Certificate">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <!-- Certification 5 -->
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Microsoft Credentials Certificate</h3>
+                        <p class="cert-issuer">Microsoft credential 3</p>
+                        <p class="cert-date">Issued:  23 November 2025</p>
+                        <p class="cert-description">Microsoft Applied Skills: Create and manage canvas apps with Power
+Apps</p>
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                            <span>Verified</span>
+                        </div>
+                    </div>
+                    <a href="Credentials - dhirajteke-7370 _ Microsoft Learn 3 (1).pdf" class="cert-link" aria-label="View Certificate">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <!-- Certification 6 -->
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Microsoft Credentials Certificate</h3>
+                        <p class="cert-issuer">Microsoft credential 4</p>
+                        <p class="cert-date">Issued:  24 November 2025</p>
+                        <p class="cert-description">Microsoft Applied Skills: Create and manage automated processes by
+using Power Automate</p>
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                            <span>Verified</span>
+                        </div>
+                    </div>
+                    <a href="Credentials - dhirajteke-7370 _ Microsoft Learn 4 (1).pdf" class="cert-link" aria-label="View Certificate">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Featured work and case studies</p>
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                <button class="filter-btn" data-filter="figma">Figma</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="Python-Core">
+                    <div class="project-image">
+                        <img src="Screenshot 2026-01-04 123011.png" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="Cwater_reminderwater.py/water.py" class="project-link" aria-label="View Demo"><i class="fas fa-eye"></i></a>
+                                <a href="water.py" class="project-link" aria-label="View Code"><i class="fab fa-github"></i></a>
+                                <!-- <a href="#" class="project-link" aria-label="View Figma"><i class="fab fa-figma"></i></a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Drinking Water Reminder</h3>
+                        <p>Python Developing with using import modules pyttsx3 and time </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Module(pyttsx3)</span>
+                            <span class="tag">Module(time)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <!-- <div class="project-card" data-category="design figma">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1545235617-7a424c1a60cc?w=800" alt="Mobile App Design">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Demo"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link" aria-label="View Figma"><i class="fab fa-figma"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Fitness App UI/UX</h3>
+                        <p>Complete mobile app design system created in Figma with 50+ screens</p>
+                        <div class="project-tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Mobile</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Project 3 -->
+                <!-- <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555421689-d68471e189f2?w=800" alt="Dashboard Analytics">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Demo"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link" aria-label="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Real-time analytics dashboard with interactive charts and data visualization</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Chart.js</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Project 4 -->
+                <!-- <div class="project-card" data-category="design figma">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800" alt="Design System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Demo"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link" aria-label="View Figma"><i class="fab fa-figma"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Corporate Design System</h3>
+                        <p>Comprehensive design system with components, tokens, and documentation in Figma</p>
+                        <div class="project-tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">Design System</span>
+                            <span class="tag">Tokens</span>
+                        </div>
+                    </div> -->
+                <!-- </div> -->
+
+                <!-- Project 5 -->
+                <!-- <div class="project-card" data-category="web figma">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Demo"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link" aria-label="View Code"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link" aria-label="View Figma"><i class="fab fa-figma"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Creative Portfolio</h3>
+                        <p>Modern portfolio website with smooth animations and interactive elements</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Project 6 -->
+                <!-- <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800" alt="Task Management">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Demo"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="project-link" aria-label="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>Collaborative task management with real-time updates and team features</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">PWA</span>
+                        </div>
+                    </div> -->
+                <!-- </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together on your next project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>dhirajteke4@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 9172121002</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Pune , India</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/Dj18-26" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/dhiraj-teke?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BAcP2Ddy3TTiBYLu3cdNdwg%3D%3D" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/its_dhi_raj.26?igsh=MXMyenRiZ214eXlsNQ==" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-input" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-input" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" class="form-input" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" class="form-input" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Portfolio. Designed & Developed with <i class="fas fa-heart"></i></p>
+                <p class="figma-credit">Design System in <i class="fab fa-figma"></i> Figma</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
